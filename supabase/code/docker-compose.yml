@@ -50,7 +50,7 @@ services:
   kong:
     image: kong:2.8.1
     ports:
-      - "9000":"8000" 
+      - "9000:8000" 
     restart: unless-stopped
     # https://unix.stackexchange.com/a/294837
     entrypoint: bash -c 'eval "echo \"$$(cat ~/temp.yml)\"" > ~/kong.yml &&
