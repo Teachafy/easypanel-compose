@@ -144,9 +144,9 @@ services:
     plugins:
       - name: cors
       - name: key-auth
-      config:
-        hide_credentials: false
-        anonymous: "anon"
+        config:
+          hide_credentials: false
+          anonymous: "anon"
       - name: acl
         config:
           hide_groups_header: true
