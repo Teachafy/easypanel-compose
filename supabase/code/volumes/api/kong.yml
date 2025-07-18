@@ -134,7 +134,7 @@ services:
   ## Secure Realtime routes
   - name: realtime-v1-ws
     _comment: 'Realtime: /realtime/v1/* -> ws://realtime:4000/socket/*'
-    url: ws://realtime:4000
+    url: http://realtime:4000
     protocol: http
     routes:
       - name: realtime-v1-ws
