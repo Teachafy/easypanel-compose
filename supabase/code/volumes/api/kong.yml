@@ -135,7 +135,7 @@ services:
   - name: realtime-v1-ws
     _comment: 'Realtime: /realtime/v1/* -> ws://realtime:4000/socket/*'
     url: ws://realtime:4000
-    protocol: ws
+    protocol: http
     routes:
       - name: realtime-v1-ws
         strip_path: true
